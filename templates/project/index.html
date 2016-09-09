@@ -1,0 +1,32 @@
+<div class="page-banner project">
+  <div class="bottom">
+    <a class="btn btn-green btn-big" ui-sref="project.edit"><i class="icon iconfont mr-10">&#xe619;</i>新建项目</a>
+  </div>
+</div>
+<div class="content pad-20 has-title">
+  <div class="content-title row pr-20">
+    <div class="col tab v-m">
+      <span class="active">全部</span>
+      <span>手机</span>
+      <span>PC</span>
+      <span>系统</span>
+    </div>
+    <div class="col v-m t-r">
+      <div class="search">
+        <input type="text" placeholder="项目名称">
+        <button class="icon iconfont">&#xe61a;</button>
+      </div>
+    </div>
+  </div>
+  <div class="ht-100p auto">
+    <ul class="project-list">
+      <li ng-repeat="item in data">
+        <a href="javascript:;">
+          <span class="img"><img src="img/img005.jpg" alt=""></span>
+          <b class="title" ng-bind="item.title" title="{{item.title}}"></b>
+          <span class="introduce">介绍</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
